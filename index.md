@@ -7,5 +7,8 @@ author_profile: true
 ---
 I am a **graduate student** pursuining CS at University of Washington with 4+ years of industry experience working as a software engineer in Fortune 500 companies . My areas of interest are software design and AI native  development . My main projects are
 - SafeSpace AI
-- PersonalAIAgent
-- Deep Discovery
+<iframe src="https://github.com/IdeaLabUWB/SafeSpaceAI" width="640" 
+height="480" allow="autoplay"></iframe>
+- Deep Discovery 
+<iframe src="https://github.com/sonalsingh1806/OpportunityMinerBase" width="640" 
+height="480" allow="autoplay"></iframe>
