@@ -3,6 +3,12 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I’m a software engineer and graduate student in Computer Science at the University of Washington Bothell, focused on building AI-native applications that solve real-world problems.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+With 4+ years of experience across companies like Siemens and ABB, I’ve worked end-to-end on scalable systems from backend architecture and data pipelines to full-stack applications and analytics platforms. My work has included migrating legacy systems, building telemetry-driven reporting tools, and developing production-grade features used in high-stakes environments.
+
+Recently, my focus has shifted toward applied AI and LLM-powered systems. I’m currently building SafeSpace AI, a human-centered mental health application that uses Retrieval-Augmented Generation (RAG) and conversational agents to provide accessible anxiety support. My work explores areas like inference pipelines, prompt design, human-in-the-loop evaluation, and latency optimization for real-time AI systems.
+
+I’m particularly interested in AI-native software engineering—where developers orchestrate models, data, and tools to build intelligent systems rather than just writing traditional code. I enjoy designing systems from first principles: defining requirements, modeling data, and building scalable architectures that integrate seamlessly with modern AI capabilities.
+
+I’m actively seeking opportunities where I can contribute to building impactful AI products and continue growing as an AI-native engineer.
