@@ -62,12 +62,6 @@ author:
   avatar : "/assets/images/portrait.jpeg"
   bio    : "CompScience Graduate student at University of Washington with 4+ years of experience as a Software engineer in fortune 500 companies. AI Software Engineer Building AI-powered applications with LLMs, RAG, and scalable backend systems"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sonalsingh1806"
