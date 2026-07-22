@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sonal Singh — AI/Agentic Software Engineer</title>
-<meta name="description" content="Sonal Singh — AI/Agentic Software Engineer building production LLM systems, RAG pipelines, and reliable backend infrastructure.">
+<title>Sonal Singh | AI/Agentic Software Engineer</title>
+<meta name="description" content="Sonal Singh: AI/Agentic Software Engineer building production LLM systems, RAG pipelines, and reliable backend infrastructure.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0b0d12;
-    --bg-alt:#11141c;
-    --card:#151924;
-    --border:#242a38;
-    --text:#e8eaf0;
-    --text-dim:#9aa1b2;
-    --accent:#7c9eff;
-    --accent2:#7cf5d6;
-    --gradient: linear-gradient(120deg,#7c9eff 0%, #a685ff 50%, #7cf5d6 100%);
+    --bg:#ffffff;
+    --bg-alt:#f4f6fb;
+    --card:#ffffff;
+    --border:#e2e6f0;
+    --text:#161a24;
+    --text-dim:#5c6478;
+    --accent:#3f5fe0;
+    --accent2:#0ea36f;
+    --gradient: linear-gradient(120deg,#3f5fe0 0%, #7c5cff 50%, #0ea36f 100%);
     --radius: 14px;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -39,14 +39,14 @@
     content:"";
     position:fixed; top:-20%; left:50%; transform:translateX(-50%);
     width:900px; height:900px;
-    background: radial-gradient(circle, rgba(124,158,255,0.15) 0%, rgba(124,158,255,0) 70%);
+    background: radial-gradient(circle, rgba(63,95,224,0.10) 0%, rgba(63,95,224,0) 70%);
     pointer-events:none; z-index:0;
   }
 
   /* nav */
   header{
     position:sticky; top:0; z-index:50;
-    background:rgba(11,13,18,0.75);
+    background:rgba(255,255,255,0.75);
     backdrop-filter: blur(12px);
     border-bottom:1px solid var(--border);
   }
@@ -66,6 +66,16 @@
 
   /* hero */
   .hero{padding:120px 0 96px; text-align:left;}
+  .hero-grid{display:grid; grid-template-columns:1fr 280px; gap:56px; align-items:center;}
+  @media(max-width:820px){ .hero-grid{grid-template-columns:1fr; gap:40px;} .hero-photo{order:-1; width:160px; margin:0 auto;} }
+  .hero-photo{
+    position:relative; width:260px; height:260px; border-radius:50%;
+    padding:6px; background:var(--gradient);
+  }
+  .hero-photo img{
+    width:100%; height:100%; object-fit:cover; border-radius:50%;
+    display:block; border:4px solid var(--bg);
+  }
   .eyebrow{
     display:inline-flex; align-items:center; gap:8px;
     font-size:13px; color:var(--accent2); font-weight:500;
@@ -86,7 +96,7 @@
     padding:13px 24px; border-radius:10px; font-weight:600; font-size:14px;
     border:1px solid var(--border); transition:all .18s ease;
   }
-  .btn-primary{background:var(--gradient); color:#0b0d12; border:none;}
+  .btn-primary{background:var(--gradient); color:#ffffff; border:none;}
   .btn-primary:hover{opacity:.88; transform:translateY(-1px);}
   .btn-ghost{color:var(--text); background:var(--bg-alt);}
   .btn-ghost:hover{border-color:var(--accent); color:var(--accent);}
@@ -107,6 +117,7 @@
   .about-grid strong{color:var(--text); font-weight:600;}
   .infocard{
     background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:24px;
+    box-shadow:0 1px 3px rgba(20,25,40,0.05);
   }
   .infocard h4{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-dim); margin-bottom:14px;}
   .infocard .row{display:flex; justify-content:space-between; padding:9px 0; border-bottom:1px solid var(--border); font-size:14px;}
@@ -118,6 +129,7 @@
     background:linear-gradient(180deg, var(--card), var(--bg-alt));
     border:1px solid var(--border); border-radius:20px; padding:44px;
     position:relative; overflow:hidden;
+    box-shadow:0 4px 24px rgba(20,25,40,0.06);
   }
   .feature-card::before{
     content:""; position:absolute; top:0; left:0; right:0; height:3px; background:var(--gradient);
@@ -146,6 +158,7 @@
   .proj-card{
     background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:28px;
     transition:transform .18s ease, border-color .18s ease;
+    box-shadow:0 1px 3px rgba(20,25,40,0.05);
   }
   .proj-card:hover{transform:translateY(-3px); border-color:var(--accent);}
   .proj-card h4{font-size:18px; font-weight:700; margin-bottom:10px;}
@@ -167,12 +180,12 @@
   .tl-company{font-size:14px; color:var(--accent2); margin-bottom:10px; font-weight:500;}
   .tl-item ul{list-style:none; color:var(--text-dim); font-size:14.5px;}
   .tl-item li{margin-bottom:6px; padding-left:18px; position:relative;}
-  .tl-item li::before{content:"—"; position:absolute; left:0; color:var(--border);}
+  .tl-item li::before{content:"\2022"; position:absolute; left:0; color:var(--border);}
 
   /* skills */
   .skill-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
   @media(max-width:720px){ .skill-grid{grid-template-columns:1fr;} }
-  .skill-card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:24px;}
+  .skill-card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:0 1px 3px rgba(20,25,40,0.05);}
   .skill-card h4{font-size:14px; color:var(--accent); text-transform:uppercase; letter-spacing:.05em; margin-bottom:14px;}
   .skill-card .pillrow{gap:9px;}
 
@@ -180,6 +193,7 @@
   .contact-card{
     background:linear-gradient(135deg, var(--card), var(--bg-alt));
     border:1px solid var(--border); border-radius:20px; padding:56px; text-align:center;
+    box-shadow:0 4px 24px rgba(20,25,40,0.06);
   }
   .contact-card h2{font-size:clamp(24px,4vw,34px); font-weight:800; margin-bottom:14px;}
   .contact-card p{color:var(--text-dim); margin-bottom:32px; font-size:16px;}
@@ -196,7 +210,7 @@
 
 <header>
   <nav class="wrap">
-    <div class="logo">Sonal<span></span>Singh</div>
+    <div class="logo">Sonal Singh</div>
     <div class="navlinks">
       <a href="#about">About</a>
       <a href="#work">Work</a>
@@ -208,10 +222,11 @@
 </header>
 
 <section class="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div>
     <div class="eyebrow reveal"><span class="dot"></span> Open to Software Engineering roles · Available immediately</div>
     <h1 class="reveal">Building <span class="grad">production AI systems</span> that hold up in the real world.</h1>
-    <p class="lead reveal">AI/agentic software engineer with 5+ years shipping production software — from LLM-powered agents and RAG pipelines to the distributed backend infrastructure underneath them. Currently completing an M.S. in Computer Science at the University of Washington.</p>
+    <p class="lead reveal">AI/agentic software engineer with 5+ years shipping production software, from LLM-powered agents and RAG pipelines to the distributed backend infrastructure underneath them. Currently completing an M.S. in Computer Science at the University of Washington.</p>
     <div class="btnrow reveal">
       <a class="btn btn-primary" href="#work">View my work</a>
       <a class="btn btn-ghost" href="https://github.com/sonalsingh1806" target="_blank" rel="noopener">GitHub ↗</a>
@@ -222,6 +237,10 @@
       <div class="stat"><b>3</b><span>Fortune-500 / high-growth teams</span></div>
       <div class="stat"><b>13</b><span>Real users in AI evaluation study</span></div>
     </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img src="assets/images/portrait.jpeg" alt="Sonal Singh">
+    </div>
   </div>
 </section>
 
@@ -231,7 +250,7 @@
     <h2 class="sec-title reveal">Engineer first, AI-native by default.</h2>
     <div class="about-grid">
       <div class="reveal">
-        <p>I'm a software engineer with production experience spanning <strong>Fortune 500 industrial systems</strong> (ABB, Siemens) and <strong>AI-native product development</strong> (Future Force). That combination shapes how I build: I care about the same things — reliability, observability, clean data pipelines — whether I'm shipping a backend service or an LLM agent.</p>
+        <p>I'm a software engineer with production experience spanning <strong>Fortune 500 industrial systems</strong> (ABB, Siemens) and <strong>AI-native product development</strong> (Future Force). That combination shapes how I build: I care about the same things (reliability, observability, clean data pipelines) whether I'm shipping a backend service or an LLM agent.</p>
         <p>Most recently, I designed and shipped <strong>SafeSpace AI</strong> solo, end to end: a production RAG application with agentic workflows, guardrails, and human-in-the-loop review, validated with a real user study rather than a demo and a hope.</p>
         <p>I'm currently completing my <strong>M.S. in Computer Science and Software Engineering</strong> at the University of Washington Bothell, graduating June 2026, and I'm available to start immediately.</p>
       </div>
@@ -252,7 +271,7 @@
   <div class="wrap">
     <div class="kicker reveal">Featured Work</div>
     <h2 class="sec-title reveal">SafeSpace AI</h2>
-    <p class="sec-lead reveal">Not a class project — a full production system, built and owned solo, in a domain where getting AI behavior wrong has real consequences.</p>
+    <p class="sec-lead reveal">Not a class project: a full production system, built and owned solo, in a domain where getting AI behavior wrong has real consequences.</p>
 
     <div class="feature-card reveal">
       <div class="feature-top">
@@ -261,7 +280,7 @@
           <h3>SafeSpace AI</h3>
         </div>
       </div>
-      <p class="feature-desc">A mental-health support application designed end to end — architecture, agent design, evaluation, and live deployment — where safety and trustworthiness weren't optional. Built RAG-based conversational features with guardrails and human-in-the-loop review, then validated the system with a real user study rather than assuming it worked.</p>
+      <p class="feature-desc">A mental-health support application designed end to end (architecture, agent design, evaluation, and live deployment) where safety and trustworthiness weren't optional. Built RAG-based conversational features with guardrails and human-in-the-loop review, then validated the system with a real user study rather than assuming it worked.</p>
       <div class="pillrow">
         <span class="pill">Python</span><span class="pill">TypeScript / React</span><span class="pill">FastAPI</span>
         <span class="pill">PostgreSQL</span><span class="pill">LangChain</span><span class="pill">FAISS / Vector Search</span>
@@ -281,7 +300,7 @@
     <div class="proj-grid">
       <div class="proj-card reveal">
         <h4>Marketplace Aggregator</h4>
-        <p>Serverless, event-driven backend on AWS — Lambda, API Gateway, and DynamoDB, connected via SQS with dead-letter queues for fault-tolerant asynchronous processing. Least-privilege IAM policies scoped per function.</p>
+        <p>Serverless, event-driven backend on AWS (Lambda, API Gateway, and DynamoDB) connected via SQS with dead-letter queues for fault-tolerant asynchronous processing. Least-privilege IAM policies scoped per function.</p>
         <div class="pillrow">
           <span class="pill">AWS Lambda</span><span class="pill">API Gateway</span><span class="pill">DynamoDB</span><span class="pill">SQS/DLQ</span>
         </div>
@@ -305,12 +324,12 @@
     <h2 class="sec-title reveal">Where I've built things.</h2>
     <div class="timeline">
       <div class="tl-item reveal">
-        <div class="tl-head"><h4>AI &amp; LLM Engineer — Internship</h4><span class="dates mono">Jun 2025 – Sep 2025</span></div>
+        <div class="tl-head"><h4>AI &amp; LLM Engineer (Internship)</h4><span class="dates mono">Jun 2025 – Sep 2025</span></div>
         <div class="tl-company">Future Force · Seattle, WA</div>
         <ul>
           <li>Owned production-grade LLM-powered services in Python and FastAPI, applying microservices architecture and clean-code principles.</li>
           <li>Built resilient data pipelines at scale and reduced end-to-end response latency by 40% through systematic performance profiling.</li>
-          <li>Worked AI-native by default — Cursor and GitHub Copilot as part of the daily build loop, not an experiment.</li>
+          <li>Worked AI-native by default: Cursor and GitHub Copilot as part of the daily build loop, not an experiment.</li>
         </ul>
       </div>
       <div class="tl-item reveal">
@@ -326,7 +345,7 @@
         <div class="tl-head"><h4>Software Developer</h4><span class="dates mono">Jul 2019 – Oct 2021</span></div>
         <div class="tl-company">Siemens Technology and Services · Gurugram, India</div>
         <ul>
-          <li>Owned the full lifecycle of a Shift Management System for a high-criticality manufacturing environment — architecture through deployment and operations.</li>
+          <li>Owned the full lifecycle of a Shift Management System for a high-criticality manufacturing environment, from architecture through deployment and operations.</li>
           <li>Owned CI/CD in Azure DevOps and led a zero-rollback frontend migration to Angular on a hard deadline.</li>
         </ul>
       </div>
